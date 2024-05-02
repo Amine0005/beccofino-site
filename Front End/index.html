@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beccofino Ristorante - Pagina Ufficiale</title>
+
+  <!-- FontAwesome Link Kit -->
+  <script src="https://kit.fontawesome.com/5de2018e6a.js" crossorigin="anonymous"></script>
+  <!-- CSS Link Reset CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Boostrap HTML/CSS Link CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- AnimateCSS CSS Link CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- CSS Link File -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="backTopBtn"><i class="fa-solid fa-hand-pointer"></i></button>
+  <!-- Codice Per Il Pre Header -->
+  <div class="preheader">
+    <div class="preheader__container">
+      <div class="preheader__container__box1">
+        <li><a href="https://maps.google.com/?q=Viale Europa 118, 21017 Sammarate VA" class="hide" target="_blank"><i
+              class="fa-solid fa-location-dot"></i>Viale Europa 118, 21017 Sammarate VA</a></li>
+        <li><img src="img/svg/rhombus.svg" class="hide" alt=""></li>
+        <li class="preheader__itemsApertura">
+          <i class="fa-solid fa-clock"></i>
+          <h2 id="checkApertura"></h2>
+        </li>
+      </div>
+      <div class="preheader__container__box2">
+        <a href="tel:+39 335 189 1585"><i class="fa-sharp fa-solid fa-phone"></i><span></span> +39 335 189 1585</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Codice Per Il Mobile Header -->
+  <div class="header__mobile">
+    <div class="headermobile__precontainer">
+      <div class="header__precontainer__logo">
+        <img src="img/logo.png" class="precontainer__logo" alt="">
+      </div>
+      <div class="flexExpansion"></div>
+      <div class="burgerwrap__square">
+        <div class="burgerwrap">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Codice Per Il Header -->
+  <div class="header">
+    <div class="header__container">
+      <div class="header__container__logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="header__container__navList">
+        <ul>
+          <span></span>
+          <li><a href="/index.html">HOME</a></li>
+          <span></span>
+          <li><a href="/page-menus.html">MENUS</a></li>
+          <span></span>
+          <li><a href="/page-aboutus.html">CHI SIAMO?</a></li>
+          <span></span>
+          <li><a href="/page-reservation.html">RESERVATION</a></li>
+          <span></span>
+          <li><a href="/page.contact.html">CONTATTI</a></li>
+          <span></span>
+        </ul>
+      </div>
+      <div class="header__container__cta">
+        <a href="/page-reservation.html">PRENOTA UN TAVOLO</a>
+      </div>
+      <div class="header__container__information">
+        <h2>Visit Us</h2>
+        <ul>
+          <li>Viale Europa 118</li>
+          <li>Samarate 21017, VA</li>
+          <span></span>
+          <li>+39 335 189 1585</li>
+        </ul>
+        <img src="img/svg/rhombus.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Codice Per La Hero -->
+  <div class="hero__elements">
+    <div class="hero_title_elements animate__animated animate__zoomIn">
+      <h2>Il cibo è cosa che non si fa da soli. E la convivialità<br>è l’esperienza più coinvolgente.</h2>
+    </div>
+    <div class="hero_subTitle_elements animate__animated animate__zoomIn">
+      <h3>Vieni con la famiglia e prova la gioia del cibo appetitoso</h3>
+    </div>
+    <div class="hero_btnViewMenu_elements animate__animated animate__zoomIn">
+      <a href="#MenuSection">GUARDA IL MENU</a>
+    </div>
+  </div>
+
+  <!-- Carosello - Slider -->
+  <div id="MyCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="overlay"></div>
+        <img src="img/hero-bg-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <div class="overlay"></div>
+        <img src="img/hero-bg-2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <div class="overlay"></div>
+        <img src="img/hero-bg-3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <div class="overlay"></div>
+        <img src="img/hero-bg-4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <div class="carousel-control-prev">
+      <div class="btnCircle" data-bs-target="#MyCarousel" data-bs-slide="prev">
+        <span class="inner-btnCircle"><i class="fa-solid fa-angle-left"></i></span>
+      </div>
+    </div>
+    <div class="carousel-control-next">
+      <div class="btnCircle" data-bs-target="#MyCarousel" data-bs-slide="next">
+        <span class="inner-btnCircle"><i class="fa-solid fa-angle-right"></i></span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Codice Per La Prima Section -->
+  <div class="firstSection" id="AboutUsSection">
+    <div class="firstSection__container">
+      <img src="img/bg-Element1.png" id="bgElement1" alt="">
+      <div class="firstSection__Box1">
+        <div class="firstSection__preTitle">
+          <h3>STORIA</h3>
+        </div>
+        <div class="firstSection__Title">
+          <h3>CHI SIAMO?</h3>
+          <span id="firstSection__Title__span1"></span>
+          <span id="firstSection__Title__span2"></span>
+        </div>
+        <div class="firstSection__presentationText">
+          <h2>Benvenuto in Beccofino, uno dei più moderni ristoranti con piatti di alta qualità.</h2>
+        </div>
+        <div class="firstSection__descriptionAboutUs">
+          <p>Siamo un ristorante che vanta una lunga storia di successo nella nostra città.
+            Sin dall'apertura, ci siamo distinti per la nostra cucina di alta qualità e
+            l'ambiente accogliente, diventando presto un punto di riferimento per la
+            nostra regione. Offriamo una varietà di piatti, sia tradizionali che innovativi,
+            utilizzando sempre ingredienti freschi e di alta qualità.
+          </p>
+        </div>
+        <div class="firstSection__subDescription">
+          <h3>Prenota tramite chiamata</h3>
+          <h4>+39 335 189 1585</h4>
+        </div>
+        <div class="firstSection__btnDiscoveryMore">
+          <a href="/page-aboutus.html">SCOPRI DI PIU'</a>
+        </div>
+      </div>
+      <div class="firstSection__Box2">
+        <div class="firstSection__bgRestaurant">
+          <img src="img/firstSectionbg.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Codice Per La Seconda Section -->
+  <div class="secondSection">
+    <div class="secondSection__container">
+      <div class="secondSection__Informations">
+        <h3 class="count-text" data-start="0" data-stop="40" data-speed="50">1</h3>
+        <p>Personale<br>Esperti</p>
+      </div>
+      <div class="secondSection__Informations">
+        <h3 class="count-text" data-start="0" data-stop="100" data-speed="50">1</h3>
+        <p>Ordini<br>Giornalieri</p>
+      </div>
+      <div class="secondSection__Informations">
+        <h3 class="count-text" data-start="0" data-stop="10" data-speed="50">1</h3>
+        <p>Premi<br>Guadagnati</p>
+      </div>
+      <div class="secondSection__Informations">
+        <h3 class="count-text" data-start="0" data-stop="350" data-speed="50">1</h3>
+        <p>Clienti<br>Soddisfatti</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Codice Per La Terza Section -->
+  <div class="thirdSection" id="MenuSection">
+    <div class="thirdSection__preTitle">
+      <h3>SCOPRI DI PIU'</h3>
+    </div>
+    <div class="thirdSection__Title">
+      <h3>IL NOSTRO MENU</h3>
+      <span id="thirdSection__Title__span1"></span>
+      <span id="thirdSection__Title__span2"></span>
+    </div>
+    <div class="thirdSection__listMenus">
+      <ul>
+        <li onclick="mostraPranzo()" style="cursor: pointer;">PRANZO</li>
+        <li><img src="img/svg/rhombus.svg" alt=""></li>
+        <li onclick="mostraBevande()" style="cursor: pointer;">BEVANDE</li>
+        <li><img src="img/svg/rhombus.svg" alt=""></li>
+        <li onclick="mostraCena()" style="cursor: pointer;">CENA</li>
+      </ul>
+    </div>
+    <div class="thirdSection__container" id="container__pranzo">
+      <div class="thirdSection__container__box1">
+        <div class="thirdSection__container__subBox1">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-1.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Pasta fersca con zola e pere</h3>
+              <span></span>
+              <h4>$10.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Pasta, Gorgonzola, Pere, Panna, Burro, Parmigiano, Sale, Pepe, Noce Moscata.</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox2">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-2.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Filetto di manzo alla senape</h3>
+              <span></span>
+              <h4>$16.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Filetto di Manzo, Panna Fresca, Senape, Burro e Sale.</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox3">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-3.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Cordon bleu dell'osteria</h3>
+              <span></span>
+              <h4>$12.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Pasta, Gorgonzola, Pere, Panna, Burro, Parmigiano, Sale, Pepe, Noce Moscata.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thirdSection__container__box2"></div>
+      <div class="thirdSection__container__box3">
+        <div class="thirdSection__container__subBox1">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-1.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Pasta fersca con zola e pere</h3>
+              <span></span>
+              <h4>$10.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Pasta, Gorgonzola, Pere, Panna, Burro, Parmigiano, Sale, Pepe, Noce Moscata.</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox2">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-2.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Filetto di manzo alla senape</h3>
+              <span></span>
+              <h4>$16.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Filetto di Manzo, Panna Fresca, Senape, Burro e Sale.</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox3">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-3.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Cordon bleu dell'osteria</h3>
+              <span></span>
+              <h4>$12.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Petto di Pollo, Formaggio (Emmental), Prosciutto cotto, Uova, Sale, Pangrattato, Olio Extravergine
+                d'Oliva.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTAINER BEVANDE -->
+    <div class="thirdSection__container" id="container__bevande">
+      <div class="thirdSection__container__box1">
+        <div class="thirdSection__container__subBox1">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-4.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Gigantic IPA</h3>
+              <span></span>
+              <h4>$4.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Birra Fresca</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox2">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-5.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Cabernet Sauvignon - Grenache</h3>
+              <span></span>
+              <h4>$3.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Linguadoca-Rossiglione Rosso - Cabernet Sauvignon, Grenache</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox3">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-6.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Blueberry Twist - Cocktails</h3>
+              <span></span>
+              <h4>$6.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Qualunque sia il cocktail che desiderate, in questa raccolta c'è tutto. Salute!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thirdSection__container__box2"></div>
+      <div class="thirdSection__container__box3">
+        <div class="thirdSection__container__subBox1">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-4.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Gigantic IPA</h3>
+              <span></span>
+              <h4>$4.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Birra Fresca</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox2">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-5.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Cabernet Sauvignon - Grenache</h3>
+              <span></span>
+              <h4>$3.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Linguadoca-Rossiglione Rosso - Cabernet Sauvignon, Grenache</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox3">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-6.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Blueberry Twist - Cocktails</h3>
+              <span></span>
+              <h4>$6.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Qualunque sia il cocktail che desiderate, in questa raccolta c'è tutto. Salute!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTAINER CENA -->
+    <div class="thirdSection__container" id="container__cena">
+      <div class="thirdSection__container__box1">
+        <div class="thirdSection__container__subBox1">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-7.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Spaghetti alla carbonara</h3>
+              <span></span>
+              <h4>$8.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>spaghetti, guanciale di maiale, pecorino romano, uova, tuorlo d'uovo...</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox2">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-8.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Ravioli di branzino</h3>
+              <span></span>
+              <h4>$16.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Farina, tuorlo d'uovo, olio evo, branzino, aglio...</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox3">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-9.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Anguilla degli abissi</h3>
+              <span></span>
+              <h4>$25.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Anguilla, foglie di alloro, rametto di rosmarino, aceto di vino bianco, sale, pepe...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thirdSection__container__box2"></div>
+      <div class="thirdSection__container__box3">
+        <div class="thirdSection__container__subBox1">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-7.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Spaghetti alla carbonara</h3>
+              <span></span>
+              <h4>$8.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>spaghetti, guanciale di maiale, pecorino romano, uova, tuorlo d'uovo...</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox2">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-8.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Ravioli di branzino</h3>
+              <span></span>
+              <h4>$16.50</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Farina, tuorlo d'uovo, olio evo, branzino, aglio...</p>
+            </div>
+          </div>
+        </div>
+        <div class="thirdSection__container__subBox3">
+          <div class="thirdSection__subBox1__imageBox">
+            <div class="thirdSection__subBox1__imageBox__imageElement"
+              style="background-image: url(img/menuImg-9.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+            </div>
+          </div>
+          <div class="thirdSection__subBox1__elementsBox">
+            <div class="thirdSection__subBox1__firstElementsBox">
+              <h3>Anguilla degli abissi</h3>
+              <span></span>
+              <h4>$25.00</h4>
+            </div>
+            <div class="thirdSection__subBox1__secondElementsBox">
+              <p>Anguilla, foglie di alloro, rametto di rosmarino, aceto di vino bianco, sale, pepe...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thirdSection__footerPart">
+      <h3>EVENTO SPECIALE ORA</h3>
+      <h4>In <i>inverno</i> la cena costa <i>solo</i> $10</h4>
+    </div>
+    <div class="thirdSection__viewMenu">
+      <a href="/page-menus.html">SCOPRI DI PIU'</a>
+    </div>
+  </div>
+
+  <!-- Codice Per La Quarta Section -->
+  <div class="fourtySection">
+    <div class="fourtySection__preTitle">
+      <h3>IL MEGLIO DEL MEGLIO</h3>
+    </div>
+    <div class="fourtySection__Title">
+      <h3>MIGLIORI PIATTI</h3>
+      <span id="fourtySection__Title__span1"></span>
+      <span id="fourtySection__Title__span2"></span>
+    </div>
+    <div class="carousel__mainClass" data-autoplay="true">
+      <div class="carousel__container">
+
+      </div>
+      <div class="carousel__btnPrev" id="prev-button">
+        <div class="btnCircle">
+          <span class="inner-btnCircle"><i class="fa-solid fa-angle-left"></i></span>
+        </div>
+      </div>
+      <div class="carousel__btnNext" id="next-button">
+        <div class="btnCircle">
+          <span class="inner-btnCircle"><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="fourtySection__viewMenu">
+      <a href="/page-menus.html">SCOPRI DI PIU'</a>
+    </div>
+  </div>
+
+  <!-- Codice Per La Quinta Section -->
+  <div class="fiftySection" id="OurReview">
+    <div id="Carousel-Items-Review" class="carousel slide" data-ride="carousel" data-bs-ride="true"
+      data-interval="1000">
+      <div class="carousel-inner reviewCarousel-inner">
+        <div class="carousel-item active">
+          <div class="review__container">
+            <div class="symbol__review">
+              <img src="img/svg/quote.svg" alt="">
+            </div>
+            <div class="personName">
+              <h3>Recensione ricevuta da</h3>
+              <h4>Giorgio Alighieri</h4>
+            </div>
+            <div class="reviewParagraph">
+              <p>
+                il servizio è stato eccezionale - i nostri camerieri erano attenti e
+                cordiali, rendendo la cena ancora più piacevole.
+                Inoltre, l'ambiente del ristorante era elegante ma allo stesso tempo
+                accogliente, perfetto per una cena romantica
+                o per una serata tra amici.
+              </p>
+            </div>
+            <div class="rhombus__rotate">
+              <img src="img/svg/rhombus.svg" alt="">
+              <img src="img/svg/rhombus.svg" alt="">
+              <img src="img/svg/rhombus.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review__container">
+            <div class="symbol__review">
+              <img src="img/svg/quote.svg" alt="">
+            </div>
+            <div class="personName">
+              <h3>Recensione ricevuta da</h3>
+              <h4>Daniela Rossi</h4>
+            </div>
+            <div class="reviewParagraph">
+              <p>
+                il servizio node è stato eccezionale - i nostri camerieri erano attenti e
+                cordiali, rendendo la cena ancora più piacevole.
+                Inoltre, l'ambiente del ristorante era elegante ma allo stesso tempo
+                accogliente, perfetto per una cena romantica
+                o per una serata tra amici.
+              </p>
+            </div>
+            <div class="rhombus__rotate">
+              <img src="img/svg/rhombus.svg" alt="">
+              <img src="img/svg/rhombus.svg" alt="">
+              <img src="img/svg/rhombus.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review__container">
+            <div class="symbol__review">
+              <img src="img/svg/quote.svg" alt="">
+            </div>
+            <div class="personName">
+              <h3>Recensione ricevuta da</h3>
+              <h4>Armando Stensi</h4>
+            </div>
+            <div class="reviewParagraph">
+              <p>
+                il servizio test è stato eccezionale - i nostri camerieri erano attenti e
+                cordiali, rendendo la cena ancora più piacevole.
+                Inoltre, l'ambiente del ristorante era elegante ma allo stesso tempo
+                accogliente, perfetto per una cena romantica
+                o per una serata tra amici.
+              </p>
+            </div>
+            <div class="rhombus__rotate">
+              <img src="img/svg/rhombus.svg" alt="">
+              <img src="img/svg/rhombus.svg" alt="">
+              <img src="img/svg/rhombus.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Codice Per La Sesta Section -->
+  <div class="sixSection" id="R-CSection">
+    <div class="sixSection__container">
+      <div class="sixSection__formBox">
+        <div class="formBox__title">
+          <h3>Prenotazione Online</h3>
+        </div>
+        <div class="formBox__subTitle">
+          <h4>Chamaci su <i>+39 335 189 1585</i> oppure compila il modulo.</h4>
+        </div>
+        <form id="idForm">
+          <input type="text" id="formName" placeholder="Nome" required>
+
+          <select id="prefisso">
+            <option value="">Scegli un Prefisso</option>
+            <option value="30">+30 Ελλάδα</option>
+            <option value="31">+31 Nederland</option>
+            <option value="32">+32 België</option>
+            <option value="33">+33 France</option>
+            <option value="34">+34 España</option>
+            <option value="39">+39 Italia</option>
+            <option value="40">+40 România</option>
+            <option value="41">+41 Schweiz</option>
+            <option value="45">+45 Danmark</option>
+            <option value="46">+46 Sverige</option>
+            <option value="47">+47 Norge</option>
+            <option value="48">+48 Polska</option>
+            <option value="358">+358 Suomi</option>
+            <option value="420">+420 Česko</option>
+            <option value="351">+351 Portugal</option>
+            <option value="43">+43 Österreich</option>
+            <option value="385">+385 Hrvatska</option>
+            <option value="49">+49 Deutschland</option>
+            <option value="36">+36 Magyarország</option>
+            <option value="44">+44 United Kingdom</option>
+          </select>
+          <input type="text" id="formPhone" placeholder="Numero" required>
+
+          <select id="num-people">
+            <option value="1">1 Persona</option>
+            <option value="2">2 Persone</option>
+            <option value="3">3 Persone</option>
+            <option value="4">4 Persone</option>
+            <option value="5">5 Persone</option>
+            <option value="6">6 Persone</option>
+            <option value="7">7 Persone</option>
+            <option value="8">8 Persone</option>
+          </select>
+
+          <input type="date" id="formDate" placeholder="dd-mm-yyyy" required>
+
+          <select id="time-order" required>
+            <option value="1"><i class="fa-solid fa-clock"></i> 12:00</option>
+            <option value="2"><i class="fa-solid fa-clock"></i> 12:30</option>
+            <option value="3"><i class="fa-solid fa-clock"></i> 13:00</option>
+            <option value="4"><i class="fa-solid fa-clock"></i> 13:30</option>
+            <option value="5"><i class="fa-solid fa-clock"></i> 18:30</option>
+            <option value="6"><i class="fa-solid fa-clock"></i> 19:00</option>
+            <option value="7"><i class="fa-solid fa-clock"></i> 19:30</option>
+            <option value="8"><i class="fa-solid fa-clock"></i> 20:00</option>
+            <option value="9"><i class="fa-solid fa-clock"></i> 20:30</option>
+            <option value="10"><i class="fa-solid fa-clock"></i> 21:00</option>
+            <option value="11"><i class="fa-solid fa-clock"></i> 21:30</option>
+            <option value="12"><i class="fa-solid fa-clock"></i> 22:00</option>
+            <option value="13"><i class="fa-solid fa-clock"></i> 22:30</option>
+            <option value="14"><i class="fa-solid fa-clock"></i> 23:00</option>
+          </select>
+
+          <textarea name="Message"
+            placeholder="Message (Inserire le eventuali tolleranze e qualsiasi altra problematica...) Il cuoco anes si occuperà dei vostri ordini."
+            id="formMessage"></textarea>
+          <p id="idMessageError"></p>
+          <h2 id="orderButton">ORDINA UN TAVOLO</h2>
+        </form>
+      </div>
+      <div class="sixSection__contactBox">
+        <div class="background__layer__contactBox">
+          <div class="contactBox__container">
+            <div class="sixSection__title">
+              <h3>Contact Us</h3>
+            </div>
+            <div class="sixSection__prenotaTavolo">
+              <h4>Prenota un tavolo</h4>
+              <h3 onclick="copy(this)" style="cursor: pointer;">+39 335 189 1585</h3>
+            </div>
+            <div class="sixSection__localita">
+              <h3>Località</h3>
+              <h4>Viale Europa 118, 21017</h4>
+              <h4>Samarate VA</h4>
+            </div>
+            <div class="sixSection__orarioPranzo">
+              <h3>Orario Pranzo</h3>
+              <h4>Da Lunedì a Venerdì</h4>
+              <h4>12:00 alle 14:00</h4>
+            </div>
+            <div class="sixSection__orarioCena">
+              <h3>Orario Cena</h3>
+              <h4>Da Lunedì a Venerdì</h4>
+              <h4>18:30 alle 23:00</h4>
+              <h4>Sabato</h4>
+              <h4>19:00 alle 00:00</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="newsLetters">
+    <div class="newsLetters__container">
+      <div class="newsLetters__title">
+        <h2>Iscriviti Alla Nostra</h2>
+      </div>
+      <div class="newsLetters__subtitle">
+        <h3>NEWSLETTERS</h3>
+      </div>
+      <div class="newsLetters__smallDescription">
+        <p>Iscrivetevi alla nostra newsletter e riceverete il 15% di sconto sul vostro ordine.</p>
+      </div>
+      <div class="newsLetters__formNewsLetters">
+        <div class="newsLetters__inputForm">
+          <input type="text" name="newsletter" id="newsletter" placeholder="Your@mail.com">
+          <p id="idEmailError"></p>
+        </div>
+        <div class="btnSubmitNewsLetter">
+          <button onClick="ControlloEmail()">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Codice Per Il Footer -->
+  <div class="footer">
+    <div class="footer__container">
+      <div class="footer__container__box">
+        <h3>INDIRIZZO:</h3>
+        <h4>Ristorante Beccofino</h4>
+        <h5>Viale Europa 118, 21017</h5>
+        <h5>Samarate VA</h5>
+      </div>
+      <div class="footer__container__box">
+        <h3>PRENOTAZIONE:</h3>
+        <h4> <a href="tel:+39 335 189 1585">+39 335 189 1585</a></h4>
+        <h5>Compila il modulo soprastante</h5>
+        <h5><a href="/page-reservation.html">CLICCA QUI</a></h5>
+      </div>
+      <div class="footer__container__box">
+        <h3>ORARI APERTURA:</h3>
+        <h4>Lunedì - Venerdì</h4>
+        <h5>12:00 / 14:00 - 18:30 / 23:00</h5>
+        <h5>Sabato</h5>
+        <h5>19:00 / 00:00</h5>
+      </div>
+      <div class="footer__container__socialMediaBox">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div id="footer__copyright">
+      <h3>© 2023 Beccofino. All Rights Reserved</h3>
+    </div>
+  </div>
+
+  <script>
+    function ControlloEmail() {
+      var emailInput = document.getElementById("newsletter");
+      var errorMessageElement = document.getElementById('idEmailError');
+      errorMessageElement.innerHTML = "";
+      var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      var valore = emailInput.value;
+
+      if (emailInput.value.length === 0) {
+        errorMessageElement.innerHTML = "** Devi inserire un email per poter mandare la richiesta.";
+        return false;
+      }
+
+      if (!regex.test(valore)) {
+        errorMessageElement.innerHTML = "** Errore Sintassi: Valori Validi Email: a-z_A-Z@."
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+  <!-- Boostrap JS Link CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Link CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- JavaScript Link File -->
+  <script src="js/main.js"></script>
+  <!-- JavaScript Carousel Library Link File -->
+  <script src="js/carouselLibrary.js"></script>
+  <!-- JavaScript Form Validation Library Link File -->
+  <script src="js/formValidation.js"></script>
+
+</body>
+
+</html>
